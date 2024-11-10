@@ -408,25 +408,32 @@ button:hover {
 
 .card-container {
     margin-left: 5px;
-    grid-template-columns: repeat(5, 175px);
-    gap: 35px;
+    grid-template-columns: repeat(5, 204px);
+    justify-items: center;
 }
 
 .cards {
-    height: 200px;
+    width: 204px; 
+    height: 220px;
     border-radius: 5px;
     position: relative;
+}
+
+.cards:hover{
+    background-color: rgb(42, 42, 42);
 }
 
 .cards i:first-child {
     position: absolute;
     top: 5px;
-    left: 5px;
+    left: 20px;
     font-size: 10px;
-    z-index: 10;
+    z-index: 1;
 }
 
 .cards img {
+    display: block;
+    margin: 0 auto;
     height: 150px;
     width: 175px;
     border-radius: 5px;
@@ -435,6 +442,15 @@ button:hover {
 .cards h4,
 .cards p {
     margin: 5px 5px 0 5px;
+}
+
+.cards p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /* -webkit-line-clamp: 2; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-grow: 1;
 }
 
 .cards .play-icon {
