@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_Green.png">
+</head>
+
+<body>
+    <nav class="flex align-center">
+        <div class="spotify-logo"><a href=""><i class="fa-brands fa-spotify fa-2x"></i></a></div>
+
+        <div class="search-content flex">
+            <div class="home" id="home-icon">
+                <a href=""><i class="fa-solid fa-house fa-1.5x"></i></a>
+            </div>
+
+            <div class="search-bar flex justify-center align-center">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="search-input"><input type="text" placeholder="What do you want to play?"></div>
+                <i class="fa-solid fa-book browse"></i>
+            </div>
+        </div>
+
+        <div class="log-in">
+            <button class="signup-btn">Sign up</button>
+            <button class="log-btn">Log in </button>
+        </div>
+    </nav>
+
+    <!-- ***************Left Container************** -->
+    <div class="container flex">
+
+        <div class="left-container">
+
+            <div class="side-playlist flex">
+                <div class="library-section flex">
+                    <div class="library">
+                        <i class="fa-solid fa-book"></i>
+                        <span>Your Library</span>
+                    </div>
+                    <div class="plus flex align-center justify-center">
+                        <i class="fa-solid fa-plus plus-logo"></i>
+                    </div>
+                </div>
+
+                <a href=""><button class="btn">Playlist</button></a>
+
+                <div class="library-playlist">
+
+                    <div class="playlist-bar flex align-center" id="liked-songs">
+                        <img src="liked.png" alt="liked">
+                        <div class="playlist-name">
+                            <h4>Liked Songs</h4>
+                            <p>Playlist . </p>
+                        </div>
+                    </div>
+
+                    <div class="playlist-bar flex align-center" id="hindi-songs">
+                        <img src="hindi.png" alt="hindi">
+                        <div class="playlist-name">
+                            <h4>Japanese Songs</h4>
+                            <p>Playlist . </p>
+                        </div>
+                    </div>
+
+                    <div class="playlist-bar flex align-center" id="japanese-songs">
+                        <img src="japan.png" alt="japan">
+                        <div class="playlist-name">
+                            <h4>Hindi Songs</h4>
+                            <p>Playlist . </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- <div class="privacy-container">
+                <ul>
+                    <li>
+                        <a href="">Legal</a>
+                        <a href="">Safety & Privacy Center</a>
+                        <a href="">Privacy Policy</a>
+                        <a href="">Cookies</a>
+                    </li>
+                    <li>
+                        <a href="">About Ads</a>
+                        <a href="">Accessibility</a>
+                    </li>
+                    <li>
+                        <a href="">Cookies</a>
+                    </li>
+                </ul>
+
+                <button class="flex justify-center align-center"><a href=""><i
+                            class="fa-solid fa-globe"></i>English</a></button>
+            </div> -->
+
+        </div>
+
+        <!-- *************** Container************** -->
+
+
+
+
+        <!-- ***************Right Container************** -->
+
+        <div class="right-container scroll-box">
+
+             <div class="playlist-navbar">
+                <a href=""><button id="btn-All" class="btn">All</button></a>
+                <a href=""><button id="btn-Music" class="btn">Music</button></a>
+                <a href=""><button id="btn-Podcasts" class="btn">Podcasts</button></a>
+            </div>
+            <div class="suggestion-box">
+
+                <div class="playlist-box grid">
+                    <a href="" class="flex align-center">
+                        <h4>Liked Songs</h4><i class="fa-solid fa-play play-icon"></i>
+                    </a>
+                    <a href="" class="flex align-center">
+                        <h4>Randwimps movie songs</h4><i class="fa-solid fa-play play-icon"></i>
+                    </a>
+                    <a href="" class="flex align-center">
+                        <h4>Hindi Songs</h4><i class="fa-solid fa-play play-icon"></i>
+                    </a>
+                    <a href="" class="flex align-center">
+                        <h4>Japanese Songs</h4><i class="fa-solid fa-play play-icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="dynamic-song-list" class="dynamic-song-list"></div>
+
+            <div class="spotify-playlist flex">
+                <h2 class="flex align-center"><a href="">Spotify playlist</a><a href="">Show All</a></h2>
+                <div class="card-container grid">
+                    <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
+                            class="fa-solid fa-play play-icon"></i><img src="card1.png" alt="">
+                        <h4>Liked Songs</h4>
+                        <p>By Nacho</p>
+                    </div>
+                    <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
+                            class="fa-solid fa-play play-icon"></i><img src="card1.png" alt="">
+                        <h4>Liked Songs</h4>
+                        <p>By Nacho</p>
+                    </div>
+                    <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
+                            class="fa-solid fa-play play-icon"></i><img src="card1.png" alt="">
+                        <h4>Liked Songs</h4>
+                        <p>By Nacho</p>
+                    </div>
+                    <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
+                            class="fa-solid fa-play play-icon"></i><img src="card1.png" alt="">
+                        <h4>Liked Songs</h4>
+                        <p>By Nacho</p>
+                    </div>
+                    <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
+                            class="fa-solid fa-play play-icon"></i><img src="card1.png" alt="">
+                        <h4>Liked Songs</h4>
+                        <p>By Nacho</p>
+                    </div>
+                </div>
+            </div>
+            <div class="spotify-playlist flex">
+                <h2 class="flex align-center "><a href="">Recommended for today</a><a href="">Show All</a></h2>
+                <div class="card-container grid">
+                    <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
+                            class="fa-solid fa-play play-icon"></i><img src="card1.png" alt="">
+                        <h4>Liked Songs</h4>
+                        <p>By Nacho</p>
+                    </div>
+                    <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
+                            class="fa-solid fa-play play-icon"></i><img src="card1.png" alt="">
+                        <h4>Liked Songs</h4>
+                        <p>By Nacho</p>
+                    </div>
+                    <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
+                            class="fa-solid fa-play play-icon"></i><img src="card1.png" alt="">
+                        <h4>Liked Songs</h4>
+                        <p>By Nacho</p>
+                    </div>
+                    <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
+                            class="fa-solid fa-play play-icon"></i><img src="card1.png" alt="">
+                        <h4>Liked Songs</h4>
+                        <p>By Nacho</p>
+                    </div>
+                    <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
+                            class="fa-solid fa-play play-icon"></i><img src="card1.png" alt="">
+                        <h4>Liked Songs</h4>
+                        <p>By Nacho</p>
+                    </div>
+                </div>
+            </div>
+            <div class="spotify-playlist flex">
+                <h2 class="flex align-center"><a href="">Your top mixes</a><a href="">Show All</a></h2>
+                <div class="card-container grid">
+                    <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
+                            class="fa-solid fa-play play-icon"></i><img src="card1.png" alt="">
+                        <h4>Liked Songs</h4>
+                        <p>By Nacho</p>
+                    </div>
+                    <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
+                            class="fa-solid fa-play play-icon"></i><img src="card1.png" alt="">
+                        <h4>Liked Songs</h4>
+                        <p>By Nacho</p>
+                    </div>
+                    <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
+                            class="fa-solid fa-play play-icon"></i><img src="card1.png" alt="">
+                        <h4>Liked Songs</h4>
+                        <p>By Nacho</p>
+                    </div>
+                    <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
+                            class="fa-solid fa-play play-icon"></i><img src="card1.png" alt="">
+                        <h4>Liked Songs</h4>
+                        <p>By Nacho</p>
+                    </div>
+                    <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
+                            class="fa-solid fa-play play-icon"></i><img src="card1.png" alt="">
+                        <h4>Liked Songs</h4>
+                        <p>By Nacho</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- **************************PlayBar**********************8 -->
+    <div class="footer flex align-center">
+        <div class="playing-info flex align-center">
+            <img src="liked.png" alt="">
+            <div class="playlist-name">
+                <h4>Japanese Songs</h4>
+                <p>Playlist . </p>
+            </div>
+        </div>
+        <div class="playbar-container">
+            <div class="playbar flex justify-center">
+                <button><i class="fa-solid fa-shuffle"></i></button>
+                <button><i class="fa-solid fa-backward-step"></i></button>
+                <button><i class="fa-solid fa-circle-play play-btn"></i></button>
+                <button><i class="fa-solid fa-forward-step"></i></button>
+                <button><i class="fa-solid fa-repeat"></i></button>
+            </div>
+            <div class="timer flex align-center">
+                <div class="duration">0:03</div>
+                <div class="dura-bar"></div>
+                <div class="total-dura">5:03</div>
+            </div>
+        </div>
+
+        <div class="playbar-container">
+            <div class="songs-menu flex justify-center align-center">
+                <button> <i class="fa-solid fa-play"></i></button>
+                <button><i class="fa-solid fa-music"></i></button>
+                <button><i class="fa-solid fa-bars"></i></button>
+                <button><i class="fa-solid fa-plug"></i></button>
+                <button><i class="fa-solid fa-volume-high"></i></button>
+                <div class="vol-bar"></div>
+                <button><i class="fa-solid fa-window-maximize"></i></button>
+                <button><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
