@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Web Player: Music for everyone</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_Green.png">
 </head>
@@ -15,8 +16,9 @@
         <div class="spotify-logo"><a href=""><i class="fa-brands fa-spotify fa-2x"></i></a></div>
 
         <div class="search-content flex">
+
             <div class="home" id="home-icon">
-                <a href=""><i class="fa-solid fa-house fa-1.5x"></i></a>
+                <i class="fa-solid fa-house fa-1.5x"></i>
             </div>
 
             <div class="search-bar flex justify-center align-center">
@@ -48,89 +50,161 @@
                     </div>
                 </div>
 
-                <a href=""><button class="btn">Playlist</button></a>
+                <button class="btn playlist-btn">Playlist</button>
 
-                <div class="library-playlist">
+                <div class="song-container scroll-box">
+                    <ul>
+                        <li class="flex align-center songItem">
+                            <div class="info flex align-center">
+                                <div class="tracker flex align-center justify-center">
+                                    <button class="tracker-no paused" id="1">1</button>
+                                </div>
+                                <img src="img/SongImg/1.jpeg" alt="green">
+                                <div class="title">
+                                    <h4>Mr. Green Apple
+                                        <p>Mr. Green Apple </p>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="total-time">03:08</div>
+                        </li>
 
-                    <div class="playlist-bar flex align-center" id="liked-songs">
-                        <img src="liked.png" alt="liked">
-                        <div class="playlist-name">
-                            <h4>Liked Songs</h4>
-                            <p>Playlist . </p>
-                        </div>
-                    </div>
+                        <li class="flex align-center songItem">
+                            <div class="info flex align-center">
+                                <div class="tracker flex align-center justify-center">
+                                    <button class="tracker-no paused" id="2">2</button>
+                                </div>
+                                <img src="img/SongImg/1.jpeg" alt="green">
 
-                    <div class="playlist-bar flex align-center" id="hindi-songs">
-                        <img src="hindi.png" alt="hindi">
-                        <div class="playlist-name">
-                            <h4>Japanese Songs</h4>
-                            <p>Playlist . </p>
-                        </div>
-                    </div>
+                                <div class="title">
+                                    <h4>Shinunoga E-Wa
+                                        <p>Fujii Kaze</p>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="total-time">03:08</div>
+                        </li>
 
-                    <div class="playlist-bar flex align-center" id="japanese-songs">
-                        <img src="japan.png" alt="japan">
-                        <div class="playlist-name">
-                            <h4>Hindi Songs</h4>
-                            <p>Playlist . </p>
-                        </div>
-                    </div>
+                        <li class="flex align-center songItem">
+                            <div class="info flex align-center">
+                                <div class="tracker flex align-center justify-center">
+                                    <button class="tracker-no paused" id="3">3</button>
+                                </div>
+                                <img src="img/SongImg/1.jpeg" alt="green">
+                                <div class="title">
+                                    <h4>We'll Be Alright
+                                        <p>RADWIMPS</p>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="total-time">03:08</div>
+                        </li>
 
+                        <li class="flex align-center songItem">
+                            <div class="info flex align-center">
+                                <div class="tracker flex align-center justify-center">
+                                    <button class="tracker-no paused" id="4">4</button>
+                                </div>
+                                <img src="img/SongImg/1.jpeg" alt="green">
+                                <div class="title">
+                                    <h4>Zenzenzense - movie ver
+                                        <p>RADWIMPS</p>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="total-time">03:08</div>
+                        </li>
+
+                        <li class="flex align-center songItem">
+                            <div class="info flex align-center">
+                                <div class="tracker flex align-center justify-center">
+                                    <button class="tracker-no paused" id="5">5</button>
+                                </div>
+                                <img src="img/SongImg/1.jpeg" alt="green">
+                                <div class="title">
+                                    <h4>Deva Deva(From Bramhastra)
+                                        <p>Pritam, Arjit Singh </p>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="total-time">03:08</div>
+                        </li>
+
+                        <li class="flex align-center songItem">
+                            <div class="info flex align-center">
+                                <div class="tracker flex align-center justify-center">
+                                    <button class="tracker-no paused" id="6">6</button>
+                                </div>
+                                <img src="img/SongImg/1.jpeg" alt="green">
+                                <div class="title">
+                                    <h4>death bed(Coffee for your head)
+                                        <p>Powfu, beabadoobee</p>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="total-time">03:08</div>
+                        </li>
+
+                        <li class="flex align-center songItem">
+                            <div class="info flex align-center">
+                                <div class="tracker flex align-center justify-center">
+                                    <button class="tracker-no paused" id="7">7</button>
+                                </div>
+                                <img src="img/SongImg/1.jpeg" alt="green">
+                                <div class="title">
+                                    <h4>I Wanna Be Yours
+                                        <p>Arctic Monkeys</p>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="total-time">03:08</div>
+                        </li>
+
+                        <li class="flex align-center songItem">
+                            <div class="info flex align-center">
+                                <div class="tracker flex align-center justify-center">
+                                    <button class="tracker-no paused" id="8">8</button>
+                                </div>
+                                <img src="img/SongImg/1.jpeg" alt="green">
+                                <div class="title">
+                                    <h4>No Friends
+                                        <p>CADMIUM, Rosendale</p>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="total-time">03:08</div>
+                        </li>
+
+                    </ul>
                 </div>
+
             </div>
-
-            <!-- <div class="privacy-container">
-                <ul>
-                    <li>
-                        <a href="">Legal</a>
-                        <a href="">Safety & Privacy Center</a>
-                        <a href="">Privacy Policy</a>
-                        <a href="">Cookies</a>
-                    </li>
-                    <li>
-                        <a href="">About Ads</a>
-                        <a href="">Accessibility</a>
-                    </li>
-                    <li>
-                        <a href="">Cookies</a>
-                    </li>
-                </ul>
-
-                <button class="flex justify-center align-center"><a href=""><i
-                            class="fa-solid fa-globe"></i>English</a></button>
-            </div> -->
 
         </div>
 
         <!-- *************** Container************** -->
-
-
-
 
         <!-- ***************Right Container************** -->
 
         <div class="right-container scroll-box">
 
             <div class="playlist-navbar">
-                <a href=""><button id="btn-All" class="btn">All</button></a>
-                <a href=""><button id="btn-Music" class="btn">Music</button></a>
-                <a href=""><button id="btn-Podcasts" class="btn">Podcasts</button></a>
+                <button id="btn-All" class="btn">All</button>
+                <button id="btn-Music" class="btn">Music</button>
+                <button id="btn-Podcasts" class="btn">Podcasts</button>
             </div>
             <div class="suggestion-box">
 
                 <div class="playlist-box grid">
-                    <a href="" class="flex align-center">
+                    <div class="flex align-center">
                         <h4>Liked Songs</h4><i class="fa-solid fa-play play-icon"></i>
-                    </a>
-                    <a href="" class="flex align-center">
-                        <h4>Randwimps movie songs</h4><i class="fa-solid fa-play play-icon"></i>
-                    </a>
-                    <a href="" class="flex align-center">
+                    </div>
+                    <div class="flex align-center">
                         <h4>Hindi Songs</h4><i class="fa-solid fa-play play-icon"></i>
-                    </a>
-                    <a href="" class="flex align-center">
+                    </div>
+                    <div class="flex align-center">
                         <h4>Japanese Songs</h4><i class="fa-solid fa-play play-icon"></i>
-                    </a>
+                    </div>
                 </div>
             </div>
 
@@ -140,27 +214,27 @@
                 <h2 class="flex align-center "><a href="">Recommended for today</a><a href="">Show All</a></h2>
                 <div class="card-container grid">
                     <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
-                            class="fa-solid fa-play play-icon"></i><img src="card1.png" alt="">
+                            class="fa-solid fa-play play-icon"></i><img src="img/CardsImg/card1.png" alt="">
                         <h4>KaiKai Kitan/ Ao No Waltz</h4>
                         <p>Eve</p>
                     </div>
                     <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
-                            class="fa-solid fa-play play-icon"></i><img src="card2.png" alt="">
+                            class="fa-solid fa-play play-icon"></i><img src="img/CardsImg/card2.png" alt="">
                         <h4>HELP EVER HURT</h4>
                         <p>Fujii Kaze</p>
                     </div>
                     <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
-                            class="fa-solid fa-play play-icon"></i><img src="card3.png" alt="">
+                            class="fa-solid fa-play play-icon"></i><img src="img/CardsImg/card3.png" alt="">
                         <h4>ただ声一つ</h4>
                         <p> ロクデナシ</p>
                     </div>
                     <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
-                            class="fa-solid fa-play play-icon"></i><img src="card4.png" alt="">
+                            class="fa-solid fa-play play-icon"></i><img src="img/CardsImg/card4.png" alt="">
                         <h4>LEO-NiNE</h4>
                         <p>LiSA</p>
                     </div>
                     <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
-                            class="fa-solid fa-play play-icon"></i><img src="card5.png" alt="">
+                            class="fa-solid fa-play play-icon"></i><img src="img/CardsImg/card5.png" alt="">
                         <h4>TIME</h4>
                         <p>KANA-BOON</p>
                     </div>
@@ -170,27 +244,27 @@
                 <h2 class="flex align-center"><a href="">Based on your recent listening</a><a href="">Show All</a></h2>
                 <div class="card-container grid">
                     <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
-                            class="fa-solid fa-play play-icon"></i><img src="card11.png" alt="">
+                            class="fa-solid fa-play play-icon"></i><img src="img/CardsImg/card11.png" alt="">
                         <h4></h4>
                         <p>A mega mix of 75 favourites from the last few years!</p>
                     </div>
                     <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
-                            class="fa-solid fa-play play-icon"></i><img src="card13.png" alt="">
+                            class="fa-solid fa-play play-icon"></i><img src="img/CardsImg/card13.png" alt="">
                         <h4></h4>
                         <p>What are we?</p>
                     </div>
                     <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
-                            class="fa-solid fa-play play-icon"></i><img src="card14.png" alt="">
+                            class="fa-solid fa-play play-icon"></i><img src="img/CardsImg/card14.png" alt="">
                         <h4></h4>
                         <p>Music to take the pain of homework away.</p>
                     </div>
                     <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
-                            class="fa-solid fa-play play-icon"></i><img src="card15.png" alt="">
+                            class="fa-solid fa-play play-icon"></i><img src="img/CardsImg/card15.png" alt="">
                         <h4></h4>
                         <p>유저별 맞춤으로 추천 되는 행복한 노래들을</p>
                     </div>
                     <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
-                            class="fa-solid fa-play play-icon"></i><img src="card12.png" alt="">
+                            class="fa-solid fa-play play-icon"></i><img src="img/CardsImg/card12.png" alt="">
                         <h4>Liked Songs</h4>
                         <p>By Nacho</p>
                     </div>
@@ -200,27 +274,27 @@
                 <h2 class="flex align-center"><a href="">Your top mixes</a><a href="">Show All</a></h2>
                 <div class="card-container grid">
                     <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
-                            class="fa-solid fa-play play-icon"></i><img src="card6.png" alt="">
+                            class="fa-solid fa-play play-icon"></i><img src="img/CardsImg/card6.png" alt="">
                         <h4></h4>
                         <p>Shawn Mendes, Aaron Smith, OneRepublic</p>
                     </div>
                     <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
-                            class="fa-solid fa-play play-icon"></i><img src="card7.png" alt="">
+                            class="fa-solid fa-play play-icon"></i><img src="img/CardsImg/card7.png" alt="">
                         <h4></h4>
                         <p>Gotye, Ed Sheeran, Passenger</p>
                     </div>
                     <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
-                            class="fa-solid fa-play play-icon"></i><img src="card8.png" alt="">
+                            class="fa-solid fa-play play-icon"></i><img src="img/CardsImg/card8.png" alt="">
                         <h4></h4>
                         <p>Seafret, Passenger, Shiwani Khumbare</p>
                     </div>
                     <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
-                            class="fa-solid fa-play play-icon"></i><img src="card9.png" alt="">
+                            class="fa-solid fa-play play-icon"></i><img src="img/CardsImg/card9.png" alt="">
                         <h4></h4>
                         <p>Artic Monkeys, Passenger, Gotye</p>
                     </div>
                     <div class="cards"><i class="fa-brands fa-spotify fa-2x"></i><i
-                            class="fa-solid fa-play play-icon"></i><img src="card10.png" alt="">
+                            class="fa-solid fa-play play-icon"></i><img src="img/CardsImg/card10.png" alt="">
                         <h4></h4>
                         <p>Randwimps, Miki Matsubara, Shankar-</p>
                     </div>
@@ -232,38 +306,45 @@
     <!-- **************************PlayBar**********************8 -->
     <div class="footer flex align-center">
         <div class="playing-info flex align-center">
-            <img src="liked.png" alt="">
+            <img src="img/SongImg/1.jpeg" alt="">
             <div class="playlist-name">
-                <h4>Japanese Songs</h4>
-                <p>Playlist . </p>
+                <h4>Mr. Green Apple
+                    <p>Mr. Green Apple </p>
+                </h4>
             </div>
         </div>
         <div class="playbar-container">
             <div class="playbar flex justify-center">
-                <button><i class="fa-solid fa-shuffle"></i></button>
-                <button><i class="fa-solid fa-backward-step"></i></button>
-                <button><i class="fa-solid fa-circle-play play-btn"></i></button>
-                <button><i class="fa-solid fa-forward-step"></i></button>
-                <button><i class="fa-solid fa-repeat"></i></button>
+                <button id="shuffle"><i class="fa-solid fa-shuffle"></i></button>
+                <button id="prev"><i class="fa-solid fa-backward-step"></i></button>
+                <button id="foot-play" class="play"><i class="fa-solid fa-circle-play play-btn "></i></button>
+                <button id="next"><i class="fa-solid fa-forward-step"></i></button>
+                <button id="repeat"><i class="fa-solid fa-repeat"></i></button>
             </div>
-            <div class="timer flex align-center">
-                <div class="duration">0:03</div>
-                <div class="dura-bar"></div>
-                <div class="total-dura">5:03</div>
+            <div class="timer flex align-center justify-center">
+                <span id="current-duration">0:03</span>
+                <div class="bar flex align-center">
+                    <input type="range" min="0" max="100" id="duration-bar">
+                    <div class="bar2" id="bar2"></div>
+                    <div class="dot"></div>
+                </div>
+                <span id="total-duration">5:03</span>
             </div>
         </div>
 
-        <div class="playbar-container">
-            <div class="songs-menu flex justify-center align-center">
-                <button> <i class="fa-solid fa-play"></i></button>
-                <button><i class="fa-solid fa-music"></i></button>
-                <button><i class="fa-solid fa-bars"></i></button>
-                <button><i class="fa-solid fa-plug"></i></button>
-                <button><i class="fa-solid fa-volume-high"></i></button>
+        <div class="songs-menu flex justify-center align-center">
+            <button> <i class="fa-solid fa-play"></i></button>
+            <button><i class="fa-solid fa-music"></i></button>
+            <button><i class="fa-solid fa-bars"></i></button>
+            <button><i class="fa-solid fa-plug"></i></button>
+            <button class="vol-btn"><i class="fa-solid fa-volume-high" id="vol-icon"></i></button>
+            <div class="vol flex align-center ">
+                <input type="range" min="0" max="100" id="vol-input">
                 <div class="vol-bar"></div>
-                <button><i class="fa-solid fa-window-maximize"></i></button>
-                <button><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                <div class="dot" id="vol-dot"></div>
             </div>
+            <button><i class="fa-solid fa-window-maximize"></i></button>
+            <button><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
         </div>
     </div>
 
